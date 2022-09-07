@@ -13,10 +13,18 @@
 docker compose up
 ```
 
-- Build book
-    - Documents of Jupyter Book is [here](https://jupyterbook.org/en/stable/start/build.html).
+- Build Book
+    - See [documents](https://jupyterbook.org/en/stable/start/build.html).
 
 ```sh
 jupyter-book create book
 jupyter-book build book
+```
+
+- Publish Book
+    - This command does create branch `gh-pages` automatically, and `git push origin gh-pages`. You should **NOT** `push` to this branch.
+    - See [documents](https://jupyterbook.org/en/stable/start/publish.html).
+
+```sh
+ghp-import -n -p　-f book/_build/html
 ```

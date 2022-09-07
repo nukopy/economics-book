@@ -35,7 +35,8 @@ RUN mamba install --quiet --yes \
     'black' \
     'isort' \
     'ipython' \
-    'jupyter-book'
+    'jupyter-book' \
+    'ghp-import'
     # && mamba clean
 
 # Install Dependencies
