@@ -44,7 +44,7 @@ RUN mamba install --quiet --yes \
     'graph-tool' \
     'python-igraph'
 
-# matplotlib で日本語を使えるようにする (mamba / conda のリポジトリに japanize_matplotlib が存在しないので良くないけど pip で install)
+# matplotlib で日本語を使えるようにする (mamba / conda のリポジトリに japanize_matplotlib が存在しないので、良くないけど pip で install)
 RUN pin install japanize_matplotlib
 
 # matplotlib の font family の設定を書き換え
