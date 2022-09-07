@@ -3,6 +3,9 @@
 .DS_Store
 
 ## Python
+# Jupyter Book
+book/_build
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
