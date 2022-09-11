@@ -46,7 +46,7 @@ RUN mamba install --quiet --yes \
     'python-igraph'
 
 # matplotlib で日本語を使えるようにする (mamba / conda のリポジトリに japanize_matplotlib が存在しないので、良くないけど pip で install)
-RUN pin install japanize_matplotlib
+RUN pip install japanize_matplotlib
 
 # matplotlib の font family の設定を書き換え
 RUN sed -i '/font\.family/d' /opt/conda/lib/python${PYTHON_VERSION}/site-packages/matplotlib/mpl-data/matplotlibrc
